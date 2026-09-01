@@ -21,3 +21,12 @@ The **Games_Rater_V0.1** simplifies video game evaluation by guiding users throu
 - **Data Storage:** JSON / File storage
 
 ---
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project running on your local machine.
+
+### Prerequisites
+
+Make sure you have Python installed on your system:
+```bash
+python3 --version
