@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aki Game Rater</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <!-- Game app icon/logo -->
+      <span class="brand-logo">🎮</span>
+      <span class="brand-text">
+        <!-- Main app title -->
+        <span class="brand-title">Aki Game Rater</span>
+        <!-- Tagline describing what the app does -->
+        <span class="brand-sub">Rank every game. One question at a time.</span>
+      </span>
+    </div>
+    <!-- Button to open the game rating wizard for adding a new game -->
+    <button id="btn-add-top" class="btn btn-add">+ Add Game</button>
+  </div>
+</header>
+
+<!-- Main container - dynamically renders leaderboard, game details, and rating wizard -->
+<main id="app" class="container"></main>
+
+<!-- Toast notification for user feedback (game added, deleted, errors) -->
+<div id="toast" class="toast"></div>
+
+<!-- Defines categories, scoring logic, and rating data -->
+<script src="data.js"></script>
+<!-- Handles the multi-step rating wizard (add/rate a game) -->
+<script src="wizard.js"></script>
+<!-- Main app logic - renders leaderboard, detail view, persistent storage -->
+<script src="app.js"></script>
+</body>
+</html>
